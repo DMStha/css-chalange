@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background: #222;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        margin: 60px;
+        display: grid;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 1rem;
+        width: 1000px;
+        background: wheat;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: stretch;
+      }
+      .container1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 1rem;
+        width: 600px;
+        background: wheat;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: stretch;
+      }
+
+      .widget1 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 150px;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 45px;
+      }
+      .widget2 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 300px;
+        display: flexbox;
+        justify-content: center;
+        position: sticky;
+        align-items: center;
+      }
+      .widget_yellow {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 200px;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9c74f;
+        position: relative;
+      }
+      .widget3 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 300px;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .widget4 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 100px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .second-container {
+        width: 100px;
+      }
+      .widget1_2 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 150px;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 45px;
+      }
+      .widget2_2 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 300px;
+        display: flexbox;
+        justify-content: center;
+        position: sticky;
+        align-items: center;
+      }
+      .widget_yellow_2 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 200px;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9c74f;
+        position: relative;
+      }
+      .widget3_2 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 300px;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .widget4_2 {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 100px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .widget_yellow_2:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+
+      .widget1:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget1_2:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget2:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget2_2:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget3:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget3_2:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget4:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget4_2:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+      .widget_yellow:hover {
+        box-shadow: 0 0 20px rgba(34, 137, 255, 0.8);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="first-container">
+      <div class="container">
+        <div class="widget1">Widget 1</div>
+        <div class="widget2">Widget 2</div>
+        <div class="widget_yellow">Widget 3</div>
+        <div class="widget3">Widget 4</div>
+        <div class="widget4">Widget 5</div>
+        <div class="widget_yellow">Widget 6</div>
+      </div>
+    </section>
+    <section class="second-container">
+      <div class="container1">
+        <div class="widget1_2">Widget 1</div>
+        <div class="widget2_2">Widget 2</div>
+        <div class="widget4_2">Widget 4</div>
+        <div class="widget3_2">Widget 4</div>
+        <div class="widget_yellow_2">Widget 3</div>
+        <div class="widget_yellow_2">Widget 6</div>
+      </div>
+    </section>
+  </body>
+</html>
